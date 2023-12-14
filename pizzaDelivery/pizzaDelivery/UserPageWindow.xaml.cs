@@ -14,15 +14,6 @@ using System.Windows.Shapes;
 
 namespace pizzaDelivery {
     public partial class UserPageWindow : Window {
-        //public UserPageWindow() {
-        //    InitializeComponent();
-
-        //    ApplicationContext db = new ApplicationContext();
-        //    List<User> users = db.Users.ToList();
-
-        //    listOfUsers.ItemsSource = users;
-        //}
-
         private User loggedInUser;
 
         internal UserPageWindow(User user) {
@@ -31,7 +22,6 @@ namespace pizzaDelivery {
             loggedInUser = user;
 
 
-            // Populate UI elements with user information
             DisplayUserInfo();
         }
 

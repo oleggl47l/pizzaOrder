@@ -13,9 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace pizzaDelivery {
-    /// <summary>
-    /// Interaction logic for AdminPage.xaml
-    /// </summary>
     public partial class AdminPage : Window {
         public AdminPage() {
             InitializeComponent();

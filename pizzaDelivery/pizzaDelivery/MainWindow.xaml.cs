@@ -25,12 +25,6 @@ namespace pizzaDelivery {
             InitializeComponent();
 
             db = new ApplicationContext();
-
-            //DoubleAnimation btnAnimation = new DoubleAnimation();
-            //btnAnimation.From = 0;
-            //btnAnimation.To = 450;
-            //btnAnimation.Duration = TimeSpan.FromSeconds(3);
-            //regButton.BeginAnimation(Button.WidthProperty, btnAnimation);
         }
 
         private void Button_Reg_Click(object sender, RoutedEventArgs e) {
@@ -105,7 +99,6 @@ namespace pizzaDelivery {
                 passwordBox_2.Background = Brushes.Transparent;
             }
 
-            // Check for all conditions before saving to the database
             if (fName.Length >= 2 && fName.Length <= 30
                 && lName.Length >= 2 && lName.Length <= 30
                 && email.Length >= 5 && email.Length <= 50 && email.Contains("@") && email.Contains(".")
@@ -116,10 +109,6 @@ namespace pizzaDelivery {
                 User user = new User(fName, lName, address, email, phoneNum, password);
                 db.Users.Add(user);
                 db.SaveChanges();
-
-                //UserPageWindow userPageWindow = new UserPageWindow(user);
-                //userPageWindow.Show();
-                //Close();
 
                 PizzasWindow pizzasWindow = new PizzasWindow(user);
                 pizzasWindow.Show();

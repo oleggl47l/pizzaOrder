@@ -14,9 +14,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace pizzaDelivery {
-    /// <summary>
-    /// Interaction logic for OrderWindow.xaml
-    /// </summary>
     public partial class OrderWindow : Window {
         private ObservableCollection<Pizza> pizzasInCart;
         private decimal totalPrice;

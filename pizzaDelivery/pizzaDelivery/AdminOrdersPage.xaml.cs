@@ -14,9 +14,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace pizzaDelivery {
-    /// <summary>
-    /// Interaction logic for AdminOrdersPage.xaml
-    /// </summary>
     public partial class AdminOrdersPage : Page {
 
         private List<Order> orders;

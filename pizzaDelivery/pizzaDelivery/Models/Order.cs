@@ -11,7 +11,6 @@ namespace pizzaDelivery {
         public string PizzasById { get; set; } 
         public decimal Total { get; set; } 
 
-        // Navigation properties
         public virtual User User { get; set; }
     }
 }

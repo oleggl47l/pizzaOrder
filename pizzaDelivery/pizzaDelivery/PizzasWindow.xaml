@@ -35,7 +35,7 @@
                                         <Run Text="руб."/>
                                 </TextBlock>
                                 <Image Source="{Binding Image}" Width="300" Height="300" />
-                                <Button x:Name="btnAddToCart" Click="btnAddToCart_Click" Content="Add to cart" Margin="0 5 0 5"/>
+                                <Button x:Name="btnAddToCart" Click="btnAddToCart_Click" Content="Добавить в корзину" Margin="0 5 0 5"/>
                             </StackPanel>
                         </Border>
                     </DataTemplate>
