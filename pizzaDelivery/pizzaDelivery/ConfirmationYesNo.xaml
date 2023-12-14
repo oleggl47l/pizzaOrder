@@ -1,0 +1,18 @@
+﻿<Window x:Class="pizzaDelivery.ConfirmationYesNo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Confirmation" Height="150" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#212121">
+        <TextBlock Text="Вы действительно хотите подтвердить действия?"
+                   Foreground="White"
+                   FontSize="12"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Margin="5 20 5 50"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 10 0 10">
+            <Button x:Name="btnYes" Content="Да" Width="80" Margin="10 0" Click="btnYes_Click"/>
+            <Button x:Name="btnNo" Content="Нет" Width="80" Margin="10 0" Click="btnNo_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

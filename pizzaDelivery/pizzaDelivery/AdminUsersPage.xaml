@@ -1,0 +1,32 @@
+﻿<Page x:Class="pizzaDelivery.AdminUsersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:pizzaDelivery"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AdminUsersPage">
+
+    <Grid Background="White">
+        <StackPanel Grid.Row="0">
+                <TextBlock Text="Пользователи" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                <DataGrid x:Name="datagridUsers" AutoGenerateColumns="False" CanUserAddRows="False" Height="250" SelectionMode="Extended" SelectionUnit="FullRow">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding id}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Address" Binding="{Binding Address}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Email" Binding="{Binding Email}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Phone Number" Binding="{Binding PhoneNum}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Password" Binding="{Binding Password}" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+                <Button x:Name="btnDeleteUsers" Width="450" Content="Удалить" Margin="0 10 0 10" Click="Button_DeleteUsers_Click" Background="MediumVioletRed" BorderBrush="PaleVioletRed"/>
+            </StackPanel>
+            </StackPanel>
+
+        </Grid>
+    </Page>
+        
